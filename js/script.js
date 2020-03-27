@@ -37,6 +37,6 @@ let quoteArray =
         setTimeout(() => button.classList.remove("rotate"), 300);
         
     });
-
+ 
     
     
