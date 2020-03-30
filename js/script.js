@@ -15,9 +15,9 @@ let quoteArray = [
 
     let json = JSON.stringify(quoteArray);
     
-    let button = document.body.querySelector('#button');
-    let quoteText = document.body.querySelector('.quote__blockquote p');
-    let quoteCite = document.body.querySelector('.quote__blockquote cite');
+    let button = document.body.querySelector('#button');// вынести в функцию
+    let quoteText = document.body.querySelector('.quote__blockquote p');// вынести в функцию
+    let quoteCite = document.body.querySelector('.quote__blockquote cite');// вынести в функцию
     
     
     function generatorQuote(array) {
