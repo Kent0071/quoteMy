@@ -52,7 +52,7 @@ let quoteArray = [
 
     } catch (error) {
         
-        alert(error.name);
+        alert(error.message);
 
     }
     
