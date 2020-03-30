@@ -14,4 +14,39 @@ let quoteArray =
     {textQuote: "Quote10", citeQuote:"&copy; Autor10"}
 ];
 
+function getElement(selector) {
+    
+    return document.body.querySelector(selector); 
+
+}
+
+function currentQuote(array){
+
+    let currentQuote = array[Math.floor(Math.random()*10)];
+   return currentQuote;
+
+}
+
+let button = getElement('#button');
+let quoteText = getElement('.quote__blockquote p');
+let quoteCite = getElement('.quote__blockquote cite');
+
+
+
+
+function generatorQuote(arr) {
+    
+    button.addEventListener('click', function(){
+        
+         let activeQuote = currentQuote(arr);
+            
+        quoteText.innerHTML = activeQuote.textQuote;
+        quoteCite.innerHTML = activeQuote.citeQuote;
+        
+        button.classList.toggle('rotate');
+        setTimeout(() => button.classList.remove("rotate"), 300);
+    });
+}
+
+generatorQuote(quoteArray);
     
