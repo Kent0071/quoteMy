@@ -62,7 +62,7 @@
         button.classList.toggle('rotate');
         setTimeout(() => button.classList.remove("rotate"), 300);
     }
-
+ 
     /**
      * эта функция меняет состояние элемента при наступление события
      *
